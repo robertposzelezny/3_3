@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Dane klimatyczne NOAA</h1>
+    <select id="endpoint">
+      <option value="stations">/stations</option>
+      <option value="datasets">/datasets</option>
+      <option value="datacategories">/datacategories</option>
+      <option value="datatypes">/datatypes</option>
+      <option value="locationcategories">/locationcategories</option>
+      <option value="locations">/locations</option>
+      <option
+        value="data?datasetid=GHCND&startdate=2024-01-01&enddate=2024-01-31"
+      >
+        /data
+      </option>
+    </select>
+    <button id="btn1">Pobierz dane</button>
+    <div id="res-table"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
